@@ -107,18 +107,13 @@ export default {
     // Left Side
     .left-side {
         width: 50%;
-        color: $mainTextColor;
-
-        
-
-        h2 {
-            font-size: 35px;
-        }
 
         .text {
-            font-size: 11px;
-            line-height: 18px;
             padding: 30px 0;
+        }
+
+        a {
+            cursor: pointer;
         }
     } 
 

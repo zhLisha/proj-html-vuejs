@@ -28,6 +28,10 @@ img {
     display: block;
 }
 
+h2 {
+    font-size: 40px;
+}
+
 .container {
     width: 95%;
     margin: 0 auto;
@@ -61,7 +65,22 @@ img {
     color: $mainColor;
 }
 
+.btn-pink {
+    background-color: $mainColor;
+    color: $secondColor;
+}
+
 .title {
     font-family: $titlesFont;
+}
+
+.title h2 {
+    color: $mainTextColor
+}
+
+.text {
+    font-size: 11px;
+    line-height: 18px;
+    color: $mainTextColor
 }
 

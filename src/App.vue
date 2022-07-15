@@ -7,7 +7,7 @@
     </header>
 
     <!-- Main -->
-    <MyMain />
+    <MyMain :facultiesArray="facultiesAvalaible" />
 
     <!-- Footer -->
 
@@ -19,6 +19,7 @@
 import MyHeader from './components/MyHeader.vue'
 import MyMain from './components/MyMain.vue'
 import NavListJS from '../src/js array/NavListJS.json'
+import FacultiesAvalaible from '../src/js array/FacultiesAvalaible.json'
 
 export default {
   name: 'App',
@@ -29,7 +30,8 @@ export default {
 
   data() {
     return {
-      navList: NavListJS
+      navList: NavListJS,
+      facultiesAvalaible: FacultiesAvalaible
     }
   }
 }

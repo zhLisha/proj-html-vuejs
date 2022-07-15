@@ -144,6 +144,7 @@ export default {
 
         h1{
             font-size: 40px;
+            color: secondColor;
         }
 
         p {

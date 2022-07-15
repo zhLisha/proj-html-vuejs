@@ -1,0 +1,67 @@
+[
+    {
+        "faculty": "Low Faculty",
+        "icon": "Gavel-v2.png",
+        "wIcon": "Gavel-v2White.png",
+        "details":[
+           {
+            "image": "Gavel-Illustration-e1556884768193.png",
+            "title": "Law Faculty",
+            "text": "Learning from world-leading academics and practitioners, you'll not oly receive an outstanding grounding in the theory of law, but you qill be able to undestand how those principles are applied in practice through a range of student-led activities and competitions.",
+            "button": "Read More"
+           }
+        ]
+    },
+    {
+        "faculty": "Economy",
+        "icon": "Coins-tabs-v2.png",
+        "wIcon": "Coins-tabs-v2White.png",
+        "details":[
+            {
+             "image": "Gavel-Illustration-e1556884768193.png",
+             "title": "Economy",
+             "text": " Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.",
+             "button": "Read More"
+            }
+         ]
+    },
+    {
+        "faculty": "Medicine",
+        "icon": "Medicine-tabs-v2.png",
+        "wIcon": "Medicine-tabs-v2White.png",
+        "details":[
+            {
+             "image": "Gavel-Illustration-e1556884768193.png",
+             "title": "Medicine",
+             "text": "Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.",
+             "button": "Read More"
+            }
+         ]
+    },
+    {
+        "faculty": "Computer Science",
+        "icon": "Computer-tabs-v2.png",
+        "wIcon": "Computer-tabs-v2White.png",
+        "details":[
+            {
+             "image": "Gavel-Illustration-e1556884768193.png",
+             "title": "Computer Science",
+             "text": " semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo..",
+             "button": "Read More"
+            }
+         ]
+    },
+    {
+        "faculty": "Graphic Design",
+        "icon": "Palette-tabs-v2.png",
+        "wIcon": "Palette-tabs-v2White.png",
+        "details":[
+            {
+             "image": "Gavel-Illustration-e1556884768193.png",
+             "title": "Graphic Design",
+             "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede.",
+             "button": "Read More"
+            }
+         ]
+    }
+]
