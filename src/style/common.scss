@@ -25,6 +25,7 @@ a {
 
 img {
     width: 100%;
+    display: block;
 }
 
 .container {
@@ -38,7 +39,7 @@ img {
 
 .btn {
     font-family: $titlesFont;
-    padding: 15px 30px;
+    padding: 17px 30px;
     display: inline-block;
     border: none;
     border-radius: 50px;
@@ -49,3 +50,13 @@ img {
     color: $secondColor;
     background-color: $mainButtonColor;
 }
+
+.btn-white {
+    background-color: $secondColor;
+    color: $mainColor;
+}
+
+.title {
+    font-family: $titlesFont;
+}
+

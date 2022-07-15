@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     
-    <!-- Header -->
+    <!-- Header & Jumbotron -->
     <MyHeader :navListArray="navList" />
 
     <!-- Main -->
