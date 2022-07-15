@@ -23,7 +23,9 @@
 
             <!-- Jumbotron Section -->
             <div class="jumbotron">
-                <div class="title">Key to your success</div>
+                <div class="title">
+                    <h1>Key to your success</h1>
+                </div>
                 <p>
                     EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities, courses, secondary schools etc.
                 </p>
@@ -78,13 +80,13 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
-    
 
     .layer {
         background-color: #e95e5ee1;
         height: 500px;
         // opacity: 0.9;
         position: relative;
+        
     }
     nav {
         font-size: 13px;
@@ -140,7 +142,7 @@ export default {
         color: $secondColor;
         padding: 40px 0;
 
-        .title {
+        h1{
             font-size: 40px;
         }
 
@@ -170,6 +172,10 @@ export default {
     .wave {
         position: absolute;
         bottom: 0;
+        left: -130px;
+    //    right: -120px;
+
+       
     }
 
     .quick-action {

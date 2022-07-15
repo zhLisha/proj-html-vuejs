@@ -2,10 +2,12 @@
   <div id="app">
     
     <!-- Header & Jumbotron -->
-    <MyHeader :navListArray="navList" />
+    <header>
+      <MyHeader :navListArray="navList" />
+    </header>
 
     <!-- Main -->
-
+    <MyMain />
 
     <!-- Footer -->
 
@@ -15,12 +17,14 @@
 
 <script>
 import MyHeader from './components/MyHeader.vue'
+import MyMain from './components/MyMain.vue'
 import NavListJS from '../src/js array/NavListJS.json'
 
 export default {
   name: 'App',
   components: {
     MyHeader,
+    MyMain
   },
 
   data() {
