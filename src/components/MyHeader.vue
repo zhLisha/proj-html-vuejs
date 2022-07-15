@@ -14,9 +14,9 @@
                         <a class="single-action flex" href="#"> {{items.title}} <i v-if="items.arrowActive" class="fa-solid fa-caret-down arrow"></i></a>
                     </li>
 
-                    <button class="btn btn-yellow">
+                    <div class="button">
                         <a class="btn btn-yellow" href="#">VIEW COURSES</a>
-                    </button>
+                    </div>
                 </ul>
             </nav>
         </div>
@@ -49,7 +49,7 @@ export default {
         opacity: 0.94;
     }
     nav {
-        font-size: 14px;
+        font-size: 13px;
         font-family: $titlesFont;
         color: $secondColor;
         height: 110px;
@@ -66,11 +66,20 @@ export default {
         align-items: center;
         
             li {
-                padding-left: 20px;
+                padding-left: 30px;
             }
 
-            button {
-                margin-left: 20px;
+            .button {
+                margin-left: 25px;
+
+                a:hover {
+                    background-color: $secondColor;
+                    color: $mainColor;
+                }
+            }
+
+            a:hover {
+                color: $mainButtonColor;
             }
 
            .single-action {
