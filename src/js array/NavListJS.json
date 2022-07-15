@@ -1,0 +1,31 @@
+
+[
+    {
+        "title": "Home",
+        "arrowActive": true
+    },
+    {
+        "title": "Courses",
+        "arrowActive": true
+    },
+    {
+        "title": "About Us",
+        "arrowActive": false
+    },
+    {
+        "title": "News",
+        "arrowActive": true
+    },
+    {
+        "title": "Pages",
+        "arrowActive": true
+    },
+    {
+        "title": "Contact",
+        "arrowActive": false
+    },
+    {
+        "title": "Purcase",
+        "arrowActive": false
+    }
+]
