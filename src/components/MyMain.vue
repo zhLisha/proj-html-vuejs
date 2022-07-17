@@ -9,6 +9,9 @@
     <!-- Section 3 YEar Program -->
     <SectionThree :upComingEvent="eventUpComing" />
 
+    <!-- Section 4 Latesr Courses + Methods + International Students-->
+    <SectionFour :latestCourses="recentCourses" />
+
   </main>
 </template>
 
@@ -17,18 +20,21 @@
 import SectionOne from './Each Section/SectionOne.vue'
 import SectionTwo from './Each Section/SectionTwo.vue'
 import SectionThree from './Each Section/SectionThree.vue'
+import SectionFour from './Each Section/SectionFour.vue'
 
 export default {
     name: 'MyMain',
     props: {
         facultiesArray: Array,
-        eventUpComing: Array
+        eventUpComing: Array,
+        recentCourses: Array
     },
 
     components: {
         SectionOne,
         SectionTwo, 
         SectionThree,
+        SectionFour,
     }
 }
 </script>

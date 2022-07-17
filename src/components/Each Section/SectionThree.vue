@@ -362,11 +362,11 @@ section {
 
         .text-bottom {
             .orientation {
-                margin-left: 60px;
+                margin-left: 80px;
             }
 
             .evolution {
-                margin-left: 25px;
+                margin-left: 0px;
             }
         }
     }

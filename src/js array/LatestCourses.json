@@ -1,0 +1,28 @@
+[
+    {
+        "title": "Make Better Decisions",
+        "teacher": "James Collins",
+        "price": "$21.00",
+        "icon": "Decisions-icon.png"
+    },
+    {
+        "title": "How to be a speaker",
+        "teacher": "James Collins",
+        "price": "Free",
+        "icon": "Speaker-icon.png"
+    },
+    {
+        "title": "Network Introductions",
+        "teacher": "James Collins",
+        "price": "Free",
+        "icon": "Network-icon.png"
+    },
+    
+    {
+        "title": "Brand Management",
+        "teacher": "James Collins",
+        "price": "Free",
+        "icon": "Brand-icon.png"
+    }
+    
+]
