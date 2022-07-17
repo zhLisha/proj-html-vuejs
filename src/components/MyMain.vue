@@ -12,6 +12,9 @@
     <!-- Section 4 Latesr Courses + Methods + International Students-->
     <SectionFour :latestCourses="recentCourses" />
 
+    <!-- Section Subscription -->
+    <SectionSubscription />
+
   </main>
 </template>
 
@@ -21,6 +24,7 @@ import SectionOne from './Each Section/SectionOne.vue'
 import SectionTwo from './Each Section/SectionTwo.vue'
 import SectionThree from './Each Section/SectionThree.vue'
 import SectionFour from './Each Section/SectionFour.vue'
+import SectionSubscription from './Each Section/SectionSubscription.vue'
 
 export default {
     name: 'MyMain',
@@ -35,6 +39,7 @@ export default {
         SectionTwo, 
         SectionThree,
         SectionFour,
+        SectionSubscription,
     }
 }
 </script>

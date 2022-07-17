@@ -59,8 +59,9 @@ export default {
 
 section {
     background-image: url('@/assets/Waves/home-background.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: right;
 }
 
 .purchase-frame {
