@@ -15,6 +15,9 @@
     <!-- Section Subscription -->
     <SectionSubscription />
 
+    <!-- Section Partners -->
+    <SectionPartners :partnerIcons="partnersArray" />
+
   </main>
 </template>
 
@@ -25,13 +28,15 @@ import SectionTwo from './Each Section/SectionTwo.vue'
 import SectionThree from './Each Section/SectionThree.vue'
 import SectionFour from './Each Section/SectionFour.vue'
 import SectionSubscription from './Each Section/SectionSubscription.vue'
+import SectionPartners from './Each Section/SectionPartners.vue'
 
 export default {
     name: 'MyMain',
     props: {
         facultiesArray: Array,
         eventUpComing: Array,
-        recentCourses: Array
+        recentCourses: Array,
+        partnersArray: Array
     },
 
     components: {
@@ -40,6 +45,7 @@ export default {
         SectionThree,
         SectionFour,
         SectionSubscription,
+        SectionPartners,
     }
 }
 </script>

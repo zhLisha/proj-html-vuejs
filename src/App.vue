@@ -7,7 +7,7 @@
     </header>
 
     <!-- Main -->
-    <MyMain :facultiesArray="facultiesAvalaible" :eventUpComing="futureEvents" :recentCourses="latestCourses"/>
+    <MyMain :facultiesArray="facultiesAvalaible" :eventUpComing="futureEvents" :recentCourses="latestCourses" :partnersArray="partnersIcon" />
 
     <!-- Footer -->
 
@@ -22,6 +22,7 @@ import NavListJS from '../src/js array/NavListJS.json'
 import FacultiesAvalaible from '../src/js array/FacultiesAvalaible.json'
 import EventsDetails from '../src/js array/EventsDetails.json'
 import LatestCourses from '../src/js array/LatestCourses.json'
+import PartnersIcons from '../src/js array/PartnersIcons'
 
 export default {
   name: 'App',
@@ -35,7 +36,8 @@ export default {
       navList: NavListJS,
       facultiesAvalaible: FacultiesAvalaible,
       futureEvents: EventsDetails,
-      latestCourses: LatestCourses
+      latestCourses: LatestCourses,
+      partnersIcon: PartnersIcons
     }
   }
 }
