@@ -7,7 +7,7 @@
     </header>
 
     <!-- Main -->
-    <MyMain :facultiesArray="facultiesAvalaible" />
+    <MyMain :facultiesArray="facultiesAvalaible" :eventUpComing="futureEvents"/>
 
     <!-- Footer -->
 
@@ -20,6 +20,7 @@ import MyHeader from './components/MyHeader.vue'
 import MyMain from './components/MyMain.vue'
 import NavListJS from '../src/js array/NavListJS.json'
 import FacultiesAvalaible from '../src/js array/FacultiesAvalaible.json'
+import EventsDetails from '../src/js array/EventsDetails.json'
 
 export default {
   name: 'App',
@@ -31,7 +32,8 @@ export default {
   data() {
     return {
       navList: NavListJS,
-      facultiesAvalaible: FacultiesAvalaible
+      facultiesAvalaible: FacultiesAvalaible,
+      futureEvents: EventsDetails
     }
   }
 }

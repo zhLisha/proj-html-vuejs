@@ -12,9 +12,6 @@
         <!-- Presentation  -->
         <div class="presentation">
 
-            <!-- Detail Wave -->
-            <img class="wave" src="@/assets/Waves/home-background.png" alt="">
-
             <!-- Icon Deplayed up to the Title -->
             <div class="icon small-container">
                 <img src="@/assets/Icons/Books-icon.png" alt="">
@@ -46,6 +43,8 @@
                     <img src="@/assets/img/Graduation-Illustration.png" alt="">
                 </div>
             </div>
+             <!-- Detail Wave -->
+            <!-- <img class="wave" src="@/assets/Waves/home-background.png" alt=""> -->
         </div>
   </section>
 </template>
@@ -59,6 +58,12 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/style/variables.scss';
+
+section {
+    background-image: url('@/assets/Waves/home-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .purchase-frame {
     color: $secondColor;
@@ -124,7 +129,6 @@ export default {
         width: 50%;
         img {
             width: 400px;
-            z-index: 10;
             padding-left: 20px;
         }
     }

@@ -83,6 +83,7 @@ export default {
 
 section {
     padding: 50px 0;
+    z-index: 9999;
     .text-area {
         text-align: center;
 
@@ -104,7 +105,6 @@ section {
                 align-items: center;
                 border: 1px solid rgba(128, 128, 128, 0.144);
                 width: calc(100% / 5);
-                width: 50%;
                 padding: 30px 0;
                 transition: 0.2s;
 
@@ -117,21 +117,26 @@ section {
                     // display: none;
                 }
 
+                .default-faculty-card {
+                    color: $secondColor;
+                    background-color: $mainColor;
+                }
+
                 .white-faculties {
                     position: absolute;
                     display: none;
 
-                    &:after {
-                        content: '';
-                        position: relative;
-                        width: 0;
-                        height: 75px;
-                        left: 40%;
-                        top: -39px;
-                        // border-left: 10px outset transparent;
-                        // border-right: 10px solid transparent;
-                        border-bottom: 10px solid  $mainColor;
-                    }
+                    // &:after {
+                    //     content: '';
+                    //     position: relative;
+                    //     width: 0;
+                    //     height: 75px;
+                    //     left: 40%;
+                    //     top: -39px;
+                    //     border-left: 10px outset transparent;
+                    //     border-right: 10px solid transparent;
+                    //     border-bottom: 10px solid  $mainColor;
+                    // }
                 }
 
                 &:hover {
@@ -160,7 +165,7 @@ section {
     }
     
     .faculties-ditail {
-        min-height: 400px;
+        min-height: 450px;
         padding: 70px 0;
         align-items: center;
         .left-side {

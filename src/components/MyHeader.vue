@@ -173,7 +173,7 @@ export default {
     .wave {
         position: absolute;
         bottom: 0;
-        left: -130px;
+        // left: -130px;
     //    right: -120px;
 
        
