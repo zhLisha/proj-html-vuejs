@@ -274,6 +274,14 @@ section {
             padding: 23px 40px;
         }
 
+        .btn-pink {
+            transition: 0.3s;
+        }
+
+        .btn-pink:hover {
+            background-color: $mainButtonColor;
+        }
+
         p {
             width: 95%;
         }
