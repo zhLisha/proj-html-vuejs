@@ -43,8 +43,6 @@
                     <img src="@/assets/img/Graduation-Illustration.png" alt="">
                 </div>
             </div>
-             <!-- Detail Wave -->
-            <!-- <img class="wave" src="@/assets/Waves/home-background.png" alt=""> -->
         </div>
   </section>
 </template>
@@ -91,11 +89,6 @@ section {
     padding: 70px 0;
     position: relative;
 
-    .wave {
-        position: absolute;
-        top: 0;
-    }
-
     .icon {
         margin-bottom: 20px;
 
@@ -116,9 +109,9 @@ section {
         .text {
             padding: 30px 0;
         }
-
-        a {
-            cursor: pointer;
+        
+        .btn {
+            padding: 23px 40px;
         }
     } 
 

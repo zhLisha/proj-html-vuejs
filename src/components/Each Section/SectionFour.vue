@@ -45,6 +45,80 @@
             </ul>
         </div>
 
+        <!-- Method  -->
+        <div class="method">
+
+            <!-- Main Content -->
+            <div class="flex">
+                <div class="left-side">
+
+                    <!-- Icon Deplayed up to the Title -->
+                    <div class="icon">
+                        <img src="@/assets/Icons/Exam-icon.png" alt="">
+                    </div>
+
+                    <!-- Title -->
+                    <div class="title">
+                        <h2>The most efficient examination method</h2>
+                    </div>
+
+                    <div class="text">
+                        <p>
+                            EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate thje evolution of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.
+                        </p>
+                    </div>
+
+                    <div class="button">
+                        <a class="btn btn-pink" href="#">
+                            <span>Browse through courses</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="right-side flex">
+                    <img src="@/assets/img/Exam-Illustration.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Internationa Students  -->
+        <div class="international-students">
+
+            <!-- Main Content -->
+            <div class="flex">
+                <div class="left-side flex">
+                    <img src="@/assets/img/Girl-Illustration.png" alt="">
+                </div>
+
+                <!-- Right Side -->
+                <div class="right-side">
+                   
+                    <!-- Icon Deplayed up to the Title -->
+                    <div class="icon">
+                        <img src="@/assets/Icons/Exam-icon-1.png" alt="">
+                    </div>
+
+                    <!-- Title -->
+                    <div class="title">
+                        <h2>Variables fees for international students</h2>
+                    </div>
+
+                    <div class="text">
+                        <p>
+                            EduPrime has gathered teachers from around the globe to brainstorm in order to facilitate thje evolution of our students. Every teacher from our university has an influence on how students are evaluated at his/her subject.
+                        </p>
+                    </div>
+
+                    <div class="button">
+                        <a class="btn btn-pink" href="#">
+                            <span>List of Fees</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
   </section>
 </template>
@@ -127,6 +201,84 @@ section {
             }
         }
     }
+}
+
+.method {
+    padding: 70px 0;
+
+    
+    .icon {
+        margin-bottom: 20px;
+
+        img {
+            width: 50px;
+        }
+    }
+
+    // Left Side
+    .left-side {
+        width: 50%;
+        .text {
+            padding: 30px 0;
+        }
+
+        .btn {
+            padding: 23px 40px;
+        }
+        
+        p {
+            width: 95%;
+        }
+    } 
+
+    // Right Side
+    .right-side {
+        width: 50%;
+        align-items: center;
+        justify-content: flex-end;
+
+        img {
+            padding-left: 70px;
+            max-width: 540px;
+        }
+    }
+}
+
+.international-students {
+    padding: 70px 0;
+
+    .icon {
+        margin-bottom: 20px;
+
+        img {
+            width: 50px;
+        }
+    }
+
+    .left-side {
+        width: 50%;
+        align-items: center;
+        img {
+            padding-right: 70px;
+            max-width: 540px;
+        }
+    }
+
+    .right-side {
+        width: 50%;
+         .text {
+            padding: 30px 0;
+        }
+
+        .btn {
+            padding: 23px 40px;
+        }
+
+        p {
+            width: 95%;
+        }
+    }
+
 }
 
 </style>
