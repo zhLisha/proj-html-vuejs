@@ -81,6 +81,22 @@
         <button class="return-top" @click="backToTop()" >
             <i class="fa-solid fa-chevron-up"></i>
         </button>
+
+        <!-- Speech bubble -->
+        <div class="speech-bubble">
+            <div class="purchase-theme">
+                <a class="bubble flex" href="#">
+                    <img src="@/assets/Waves/svg-3.svg" alt="">
+                    <span>Purchase Theme</span>
+                </a>
+            </div>
+            <div class="related-themes">
+                <a class="bubble flex" href="#">
+                    <img src="@/assets/Waves/svg-2.svg" alt="">
+                    <span>Related Themes</span>
+                </a>
+            </div>
+        </div>
     </section>
   </footer>
 </template>
@@ -97,7 +113,6 @@ export default {
     data() {
         return {
             userInputSearch: '',
-            shevronShowed: false
         }
     },
 
@@ -114,7 +129,7 @@ export default {
 
 footer {
     background-color: $mainColor;
-    height: 400px;
+    height: 500px;
     color: $secondColor;
     position: relative;
 }
@@ -122,6 +137,7 @@ footer {
 .small-container {
     height: 100%;
     align-items: center;
+    padding-bottom: 35px;
 
     .logo-social,  
     .list-action, 
@@ -246,5 +262,30 @@ button {
     right: 30px;
     transition: all 0.5s;
     z-index: 1;
+}
+
+.speech-bubble {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+
+    .bubble {
+        background-color: #454545;
+        padding: 13px 60px 13px 40px;
+        align-items: center;
+        border-radius: 8px;
+        margin-top: 20px;
+        filter: drop-shadow(0 12px 7px #5a2727b2);
+    }
+
+    img {
+        width: 17px;
+    }
+    span {
+        font-size: 14px;
+        padding-left: 10px;
+        font-weight: 100;
+        color: #c5c5c5;
+    }
 }
 </style>
