@@ -1,6 +1,6 @@
 <template>
 <!-- Section 2 Available Falculties-->
-  <section>
+  <section id="section-about-us">
     <div class="small-container">
         <!-- Text Area -->
         <div class="text-area">

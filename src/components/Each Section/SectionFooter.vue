@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer id="section-contact-area">
     <section class="small-container flex">
         <!-- Column 1 (Logo + Social)-->
         <div class="logo-social">

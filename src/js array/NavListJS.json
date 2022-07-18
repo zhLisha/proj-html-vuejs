@@ -2,30 +2,37 @@
 [
     {
         "title": "Home",
-        "arrowActive": true
+        "arrowActive": true,
+        "href": "#"
     },
     {
         "title": "Courses",
-        "arrowActive": true
+        "arrowActive": true,
+        "href": "#section-course"
     },
     {
         "title": "About Us",
-        "arrowActive": false
+        "arrowActive": false,
+        "href": "#section-about-us"
     },
     {
         "title": "News",
-        "arrowActive": true
+        "arrowActive": true,
+        "href": "#section-news"
     },
     {
         "title": "Pages",
-        "arrowActive": true
+        "arrowActive": true,
+        "href": "#"
     },
     {
         "title": "Contact",
-        "arrowActive": false
+        "arrowActive": false,
+        "href": "#section-contact-area"
     },
     {
         "title": "Purcase",
-        "arrowActive": false
+        "arrowActive": false,
+        "href": "#"
     }
 ]

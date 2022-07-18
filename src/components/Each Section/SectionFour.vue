@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="section-course">
     <div class="small-container">
         <!-- Latest Courses -->
         <div class="latest-courses">

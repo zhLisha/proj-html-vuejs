@@ -1,87 +1,94 @@
 <template>
-    <section>
-        <!-- Main Content -->
+    <div class="wrapper">
         <!-- University Time Oriantation -->
-        <div class="main-content">
-            <div class="small-container university-year flex">
+        <section id="year-program" >
+            <div class="main-content">
+                <div class="small-container university-year flex">
 
-                <!-- Icons -->
-                <div class="icon">
-                    <img src="@/assets/Icons/Clock-and-Bell.png" alt="">
-                </div>
+                    <!-- Icons -->
+                    <div class="icon">
+                        <img src="@/assets/Icons/Clock-and-Bell.png" alt="">
+                    </div>
 
-                <!-- Title -->
-                <div class="title">
-                    <h2>University Year</h2>
-                </div>
+                    <!-- Title -->
+                    <div class="title">
+                        <h2>University Year</h2>
+                    </div>
 
-                <!-- Top Text Area -->
-                <div class="text text-top flex">
-                    <div class="demo-classes">
-                        <div class="title">
-                            <h3>Demo Classes</h3>
+                    <!-- Top Text Area -->
+                    <div class="text text-top flex">
+                        <div class="demo-classes">
+                            <div class="title">
+                                <h3>Demo Classes</h3>
+                            </div>
+                            <div class="text">
+                                In the first week, students try to accommodate with the teaching style and choose their optional courses.
+                            </div>
                         </div>
-                        <div class="text">
-                            In the first week, students try to accommodate with the teaching style and choose their optional courses.
+
+                        <div class="graduation-day">
+                            <div class="title">
+                                <h3>Graduation Day</h3>
+                            </div>
+                            <div class="text">
+                                On the day of graduation, all students gather for the ceremony and then network and party among others.
+                            </div>
                         </div>
                     </div>
 
-                    <div class="graduation-day">
-                        <div class="title">
-                            <h3>Graduation Day</h3>
+                    <!-- Image Timing Diagram -->
+                    <div class="time-diagram">
+                        <img src="@/assets/img/Timeline-Item.png" alt="">
+                    </div>
+
+                    <!-- Bottom Text Area -->
+                    <div class="text text-bottom flex">
+                        <div class="orientation">
+                            <div class="title">
+                                <h3>Orientation</h3>
+                            </div>
+                            <div class="text">
+                                <span>
+                                    First day of the university year, all students dather for the opening ceremony and then network with others.
+                                </span>
+                            </div>
                         </div>
-                        <div class="text">
-                            On the day of graduation, all students gather for the ceremony and then network and party among others.
+
+                        <div class="evolution">
+                            <div class="title">
+                                <h3>Evolution</h3>
+                            </div>
+                            <div class="text">
+                                <span>
+                                    Ate the end of semester, students take a general evolution test for every subject they're learning.
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Image Timing Diagram -->
-                <div class="time-diagram">
-                    <img src="@/assets/img/Timeline-Item.png" alt="">
-                </div>
-
-                <!-- Bottom Text Area -->
-                <div class="text text-bottom flex">
-                    <div class="orientation">
-                        <div class="title">
-                            <h3>Orientation</h3>
-                        </div>
-                        <div class="text">
-                            <span>
-                                First day of the university year, all students dather for the opening ceremony and then network with others.
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="evolution">
-                        <div class="title">
-                            <h3>Evolution</h3>
-                        </div>
-                        <div class="text">
-                            <span>
-                                Ate the end of semester, students take a general evolution test for every subject they're learning.
-                            </span>
-                        </div>
-                    </div>
-                </div>
+                
+                
             </div>
+        </section>
 
-            <!-- Upcoming Events -->
-            <div class="small-container upcoming-events">
+        <!-- Upcoming Events -->
+        <section id="section-news" class="sessions">
 
-                <!-- Icon -->
-                <div class="icon">
-                    <img src="@/assets/Icons/upcoming-events-calendar-icon.png" alt="">
-                </div>
+            <div class="main-content">
+                <div class="small-container upcoming-events">
 
-                <!-- Title -->
-                <div class="title">
-                    <h2>Upcoming Events</h2>
-                </div>
+                    <!-- Icon -->
+                    <div class="icon">
+                        <img src="@/assets/Icons/upcoming-events-calendar-icon.png" alt="">
+                    </div>
 
-                <!-- Find Sessions Event -->
-                <div class="sessions">
+                    
+                    <!-- Title -->
+                    <div class="title">
+                        <h2>Upcoming Events</h2>
+                    </div>
+
+                    <!-- Find Sessions Event -->
                     <ul class="flex">
                         <li v-for="(event, index) in upComingEvent" :key="index" class="single-session">
                             <div class="title">
@@ -102,18 +109,19 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                            
 
-                <!-- View All Event -->
-                <div class="button">
-                    <a class="btn btn-yellow" href="#">
-                        <span>View All Events</span>
-                    </a>
-                </div>
+                    <!-- View All Event -->
+                    <div class="button">
+                        <a class="btn btn-yellow" href="#">
+                            <span>View All Events</span>
+                        </a>
+                    </div>
 
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </template>
 
 <script>
@@ -129,7 +137,7 @@ export default {
 <style lang="scss" scoped>
 @import '@/style/variables.scss';
 
-section {
+.wrapper {
     padding: 180px 0;
     background-image: url('@/assets/Waves/svg-0.svg'), url('@/assets/Waves/svg-1.svg');
     // background-color: pink;
@@ -137,11 +145,22 @@ section {
     background-position: top -5px left, bottom 5px left;
 }
 
+#year-program {
+    .main-content {
+        padding-top: 70px;
+    }
+}
+
+#section-news {
+    .main-content {
+        padding-bottom: 90px;
+    }
+}
+
 .university-year {
     flex-direction: column;
     align-items: center;
     padding-bottom: 50px;
-    
 
     .title {
         h2 {
@@ -239,7 +258,6 @@ section {
 
 .main-content {
     background-color: $mainColor;
-    padding: 70px 0;
     text-align: center;
     
     .icon {

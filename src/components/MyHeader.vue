@@ -13,7 +13,7 @@
                     <!-- Actions -->
                     <ul class="actions-wrapper flex">
                         <li class="action" v-for="(items, index) in navListArray" :key="index">
-                            <a class="single-action flex" href="#"> {{items.title}} <i v-if="items.arrowActive" class="fa-solid fa-caret-down arrow"></i></a>
+                            <a class="single-action flex" :href="`${items.href}`"> {{items.title}} <i v-if="items.arrowActive" class="fa-solid fa-caret-down arrow"></i></a>
                         </li>
 
                         <div class="button">
