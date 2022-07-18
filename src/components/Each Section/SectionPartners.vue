@@ -43,11 +43,8 @@ export default {
 
 section {
     background-image: url('@/assets/Waves/background-wave3.png');
-    // height: 450px;
     background-repeat: no-repeat;
     transform: rotate(180deg);
-    // position: absolute;
-    // bottom: 0;
     background-size: contain
 }
 .partners {
@@ -59,7 +56,7 @@ section {
     .text {
         width: 40%;
         margin: 0 auto;
-        padding: 35px 0;
+        padding-top: 35px;
     }
 }
 
@@ -69,6 +66,7 @@ section {
         flex-wrap: wrap;
 
         li {
+            margin-top: 35px;
 
             a {
                 img {
@@ -85,8 +83,5 @@ section {
     }
 }
 
-.wave {
-    ;
-}
 
 </style>

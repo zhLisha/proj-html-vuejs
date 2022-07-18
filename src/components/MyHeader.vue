@@ -1,65 +1,67 @@
 <template>
-  <div class="header">
-    <div class="layer">
-        <div class="container">
-            <!-- Nav Section -->
-            <nav class="flex">
-                <!-- Logo Image -->
-                <div class="logo">
-                    <img src="@/assets/img/theme_eduprime_logo.png" alt="Logo Eduprime">
-                </div>
-
-                <!-- Actions -->
-                <ul class="actions-wrapper flex">
-                    <li class="action" v-for="(items, index) in navListArray" :key="index">
-                        <a class="single-action flex" href="#"> {{items.title}} <i v-if="items.arrowActive" class="fa-solid fa-caret-down arrow"></i></a>
-                    </li>
-
-                    <div class="button">
-                        <a class="btn btn-yellow" href="#">VIEW COURSES</a>
+<div class="wave">
+    <div class="header">
+        <div class="layer">
+            
+            <div class="container">
+                <!-- Nav Section -->
+                <nav class="flex">
+                    <!-- Logo Image -->
+                    <div class="logo">
+                        <img src="@/assets/img/theme_eduprime_logo.png" alt="Logo Eduprime">
                     </div>
-                </ul>
-            </nav>
 
-            <!-- Jumbotron Section -->
-            <div class="jumbotron">
-                <div class="title">
-                    <h1>Key to your success</h1>
-                </div>
-                <p>
-                    EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities, courses, secondary schools etc.
-                </p>
+                    <!-- Actions -->
+                    <ul class="actions-wrapper flex">
+                        <li class="action" v-for="(items, index) in navListArray" :key="index">
+                            <a class="single-action flex" href="#"> {{items.title}} <i v-if="items.arrowActive" class="fa-solid fa-caret-down arrow"></i></a>
+                        </li>
 
-                <div class="button-choose flex">
-                    <div class="search-course">
-                        <a class="btn btn-yellow" href="#"> <i class="fa-solid fa-magnifying-glass"></i> Search courses</a>
+                        <div class="button">
+                            <a class="btn btn-yellow" href="#">VIEW COURSES</a>
+                        </div>
+                    </ul>
+                </nav>
+
+                <!-- Jumbotron Section -->
+                <div class="jumbotron">
+                    <div class="title">
+                        <h1>Key to your success</h1>
                     </div>
-                    <div class="apply-university">
-                        <a class="btn btn-white" href="#"><i class="fa-solid fa-user-plus"></i> Apply for universitys</a>
+                    <p>
+                        EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities, courses, secondary schools etc.
+                    </p>
+
+                    <div class="button-choose flex">
+                        <div class="search-course">
+                            <a class="btn btn-yellow" href="#"> <i class="fa-solid fa-magnifying-glass"></i> Search courses</a>
+                        </div>
+                        <div class="apply-university">
+                            <a class="btn btn-white" href="#"><i class="fa-solid fa-user-plus"></i> Apply for universitys</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <!-- Left Small quick Menu -->
+            <div class="quick-action">
+                <div class="cart">
+                    <a href="#"><i class="bi bi-cart3"></i></a>
+                </div>
+                <div class="book">
+                    <a href="#"><i class="bi bi-book"></i></a>
+                </div>
+                <div class="palette">
+                    <a href="#"><i class="bi bi-palette2"></i></a>
+                </div>
+            </div>
+        </div>
+        
         <!-- Jumbotron Waves -->
-        <div class="wave">
-            <img src="@/assets/Waves/Wave-1.png" alt="">
-        </div>
-
-        <!-- Left Small quick Menu -->
-        <div class="quick-action">
-            <div class="cart">
-                <a href="#"><i class="bi bi-cart3"></i></a>
-            </div>
-            <div class="book">
-                <a href="#"><i class="bi bi-book"></i></a>
-            </div>
-            <div class="palette">
-                <a href="#"><i class="bi bi-palette2"></i></a>
-            </div>
+        
+            <!-- <img src="@/assets/Waves/Wave-1.png" alt=""> -->
         </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -74,6 +76,16 @@ export default {
 <style lang="scss" scoped>
 @import '@/style/variables.scss';
 
+.wave {
+    background-image: url('@/assets/Waves/Wave-1.png');
+    height: 200px;
+    // background-color: red;
+    background-repeat: no-repeat;
+    background-color: pink;
+    background-position: left 0 right 0;
+    background-size: cover;
+}
+
 .header {
     // background-color: $bgJumboColor;
     background-image: url('@/assets/img/theme_slider2_bg-1.jpg');
@@ -84,7 +96,6 @@ export default {
     .layer {
         background-color: #e95e5ee1;
         height: 500px;
-        // opacity: 0.9;
         position: relative;
         
     }
@@ -171,12 +182,8 @@ export default {
     }
 
     .wave {
-        position: absolute;
-        bottom: 0;
-        // left: -130px;
-    //    right: -120px;
-
-       
+        // position: absolute;
+        // bottom: 0;
     }
 
     .quick-action {

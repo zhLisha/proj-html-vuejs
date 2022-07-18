@@ -23,6 +23,7 @@
 
 
 <script>
+// Import Components
 import SectionOne from './Each Section/SectionOne.vue'
 import SectionTwo from './Each Section/SectionTwo.vue'
 import SectionThree from './Each Section/SectionThree.vue'

@@ -4,11 +4,14 @@
             <div class="title">
                 <h2>Subsciption Now to Our Newsletter!</h2>
             </div>
-            <div class="input-address">
-                <form action="">
+            <div class="input-address" >
+                <!-- <form onsubmit="event.preventDefault()"> -->
+                <form v-on:submit.prevent>
                     <label for="email-address"> </label>
-                    <input class="user-input" type="email" placeholder="Email adress..." id="email-address" required>
-                    <input class="submit-button" type="image" name="submit" :src="require('@/assets/Icons/paper-plane-solid.png')">
+                    <input v-model="userInput" @keyup.enter="getUserInput()" class="user-input" type="email" placeholder="Email adress..." id="email-address" required>
+                    <input class="submit-button" @click="getUserInput()" id="submit" type="image" name="submit" :src="require('@/assets/Icons/paper-plane-solid.png')">
+                    <!-- <input class="user-input" type="email" placeholder="Email adress..." id="email-address" required> -->
+                    <!-- <input class="submit-button" id="submit" type="image" name="submit" :src="require('@/assets/Icons/paper-plane-solid.png')"> -->
                 </form>
             </div>
         </div>
@@ -17,7 +20,20 @@
 
 <script>
 export default {
-    name: 'SectionSubscription'
+    name: 'SectionSubscription',
+    data() {
+        return {
+            userInput: null,
+            // userInputeSaved: []
+        }
+    },
+
+    methods: {
+        getUserInput() {
+            // this.userInputeSaved.push(this.userInput);
+            // this.userInput = '';
+        }
+    }
 }
 </script>
 
@@ -45,7 +61,7 @@ section {
     .user-input {
         border: none;
         height: 65px;
-        width: 400px;
+        width: 450px;
         padding-left: 20px;
         border-radius: 40px;
         vertical-align: middle;
