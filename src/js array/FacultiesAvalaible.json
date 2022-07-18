@@ -1,5 +1,6 @@
 [
     {
+        "id": 0,
         "faculty": "Low Faculty",
         "icon": "Gavel-v2.png",
         "wIcon": "Gavel-v2White.png",
@@ -13,6 +14,7 @@
         ]
     },
     {
+        "id": 1,
         "faculty": "Economy",
         "icon": "Coins-tabs-v2.png",
         "wIcon": "Coins-tabs-v2White.png",
@@ -26,6 +28,7 @@
          ]
     },
     {
+        "id": 2,
         "faculty": "Medicine",
         "icon": "Medicine-tabs-v2.png",
         "wIcon": "Medicine-tabs-v2White.png",
@@ -39,6 +42,7 @@
          ]
     },
     {
+        "id": 3,
         "faculty": "Computer Science",
         "icon": "Computer-tabs-v2.png",
         "wIcon": "Computer-tabs-v2White.png",
@@ -52,6 +56,7 @@
          ]
     },
     {
+        "id": 4,
         "faculty": "Graphic Design",
         "icon": "Palette-tabs-v2.png",
         "wIcon": "Palette-tabs-v2White.png",

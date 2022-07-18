@@ -18,10 +18,24 @@
      <!-- Avalaible Faculties -->
     <div class="faculties-wrapper">
         <ul class="avalaible-faculties flex small-container">
-            <li v-for="(faculties, index) in mainFacultiesArray" :key="index" class="flex" @mouseenter="getCurrentCard(index)">
+
+            <!-- Default is already highlighted the first element -->
+            <li v-for="(faculties, index) in mainFacultiesArray" :key="index" class="flex main-card-color" :class="{'hover-card-color': cardSelected == true && faculties.id == currentCard}"  @mouseover="getCurrentCard(index)">
+
+                <!--Default icon-->
                 <img :src="require(`@/assets/Icons/${faculties.icon}`)" alt="">
-                <img class="white-faculties" :src="require(`@/assets/Icons/${faculties.wIcon}`)" :alt="faculties.title">
+
+                <!-- Mousse enter icon -->
+                <!-- Unlikethe simple Hover, this v-if will mantain hightlighted the last element that user pointed -->
+                <img v-if="cardSelected == true && faculties.id == currentCard" class="white-faculties" :src="require(`@/assets/Icons/${faculties.wIcon}`)" :alt="faculties.title">
+                
+                <!-- Title -->
                 <span>{{faculties.faculty}}</span>
+
+                <!-- Appearing of Arrow at current cardSelected -->
+                <div :class="{'arrow': cardSelected == true && faculties.id == currentCard}">
+
+                </div>
             </li>
         </ul>
     </div>
@@ -62,7 +76,8 @@ export default {
 
     data() {
         return {
-            currentCard: 0
+            currentCard: 0,
+            cardSelected: true
         }
     },
 
@@ -105,46 +120,22 @@ section {
                 border: 1px solid rgba(128, 128, 128, 0.144);
                 width: calc(100% / 5);
                 padding: 30px 0;
-                transition: 0.2s;
-
-                .arrow {
-                    border-top: 5px solid $mainColor;
-                    border-right: 5px solid transparent;
-                    border-left: 5px solid transparent;
-                    position: absolute;
-                    left: 95px;
-                    // display: none;
-                }
+                position: relative;
+                
 
                 .default-faculty-card {
                     color: $secondColor;
                     background-color: $mainColor;
                 }
 
-                .white-faculties {
+                
+
+                .arrow {
+                    border-right: 15px solid transparent;
+                    border-left: 15px solid transparent;
+                    border-top: 15px solid $mainColor;
                     position: absolute;
-                    display: none;
-
-                    // &:after {
-                    //     content: '';
-                    //     position: relative;
-                    //     width: 0;
-                    //     height: 75px;
-                    //     left: 40%;
-                    //     top: -39px;
-                    //     border-left: 10px outset transparent;
-                    //     border-right: 10px solid transparent;
-                    //     border-bottom: 10px solid  $mainColor;
-                    // }
-                }
-
-                &:hover {
-                    color: $secondColor;
-                    background-color: $mainColor;
-                }
-
-                &:hover .white-faculties{
-                    display: block
+                    bottom: - 15px;
                 }
 
                 span {
@@ -157,8 +148,15 @@ section {
                 img {
                     width: 70px;
                 }
+            }
 
-                
+            .hover-card-color {
+                color: $secondColor;
+                background-color: $mainColor;
+            }
+
+            .white-faculties{
+                position: absolute;
             }
         }
     }
