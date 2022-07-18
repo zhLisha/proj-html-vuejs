@@ -23,13 +23,13 @@
                     </div>
 
                     <!-- Teacher Assigned -->
-                    <div class="teacher-assigned">
-                        <span>Teacher: </span>
+                    <div class="teacher-assigned">                        
+                        <span> <i class="bi bi-person"></i> Teacher: </span>
                         <span>{{course.teacher}}</span>
                     </div>
 
                     <div class="price-course">
-                        <span>Price: </span>
+                        <span><i class="bi bi-cash"></i> Price: </span>
                         <span>{{course.price}}</span>
                     </div>
 
