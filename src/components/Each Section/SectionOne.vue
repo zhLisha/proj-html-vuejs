@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="section-about-us">
      <!-- Purchase frame -->
         <div class="purchase-frame">
             <a href="#">

@@ -7,11 +7,10 @@
             <div class="input-address" >
                 <!-- <form onsubmit="event.preventDefault()"> -->
                 <form v-on:submit.prevent>
+                <!-- <form> -->
                     <label for="email-address"> </label>
-                    <input v-model="userInput" @keyup.enter="getUserInput()" class="user-input" type="email" placeholder="Email adress..." id="email-address" required>
+                    <input v-model="userInput" @keyup.enter="getUserInput()" class="user-input"  type="email" placeholder="Email adress..." id="email-address" required>
                     <input class="submit-button" @click="getUserInput()" id="submit" type="image" name="submit" :src="require('@/assets/Icons/paper-plane-solid.png')">
-                    <!-- <input class="user-input" type="email" placeholder="Email adress..." id="email-address" required> -->
-                    <!-- <input class="submit-button" id="submit" type="image" name="submit" :src="require('@/assets/Icons/paper-plane-solid.png')"> -->
                 </form>
             </div>
         </div>
@@ -23,15 +22,13 @@ export default {
     name: 'SectionSubscription',
     data() {
         return {
-            userInput: null,
-            // userInputeSaved: []
+            userInput: ''
         }
     },
 
     methods: {
         getUserInput() {
-            // this.userInputeSaved.push(this.userInput);
-            // this.userInput = '';
+            this.userInput = ''; 
         }
     }
 }
