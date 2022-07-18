@@ -82,8 +82,7 @@ export default {
 @import '@/style/common.scss'; 
 
 section {
-    padding: 50px 0;
-    z-index: 9999;
+    padding-top: 50px;
     .text-area {
         text-align: center;
 
@@ -173,7 +172,7 @@ section {
             justify-content: center;
 
             .faculty-image{
-                width: 300px;
+                max-width: 400px;
                 margin-right: 50px;
             }
         }

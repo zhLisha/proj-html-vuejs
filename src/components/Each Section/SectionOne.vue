@@ -62,6 +62,8 @@ section {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
+    margin-top: 55px;
+    background-position: right top 15px;
 }
 
 .purchase-frame {
@@ -87,7 +89,8 @@ section {
 
 
 .presentation {
-    padding: 70px 0;
+    padding-top: 70px;
+    padding-bottom: 120px;
     position: relative;
 
     .icon {

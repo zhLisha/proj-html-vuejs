@@ -104,12 +104,6 @@ export default {
     methods: {
         backToTop() {
            window.scrollTo(0, 0)
-        },
-
-        getYPosition(){
-        const top  = window.pageYOffset || document.documentElement.scrollTop;
-        console.log(top);
-        return top;
         }
     },
 }
@@ -120,7 +114,7 @@ export default {
 
 footer {
     background-color: $mainColor;
-    height: 500px;
+    height: 400px;
     color: $secondColor;
     position: relative;
 }

@@ -1,8 +1,7 @@
 <template>
-<div class="wave">
     <div class="header">
         <div class="layer">
-            
+
             <div class="container">
                 <!-- Nav Section -->
                 <nav class="flex">
@@ -55,11 +54,9 @@
                     <a href="#"><i class="bi bi-palette2"></i></a>
                 </div>
             </div>
-        </div>
-        
-        <!-- Jumbotron Waves -->
-        
-            <!-- <img src="@/assets/Waves/Wave-1.png" alt=""> -->
+
+            <div class="wave">
+                </div>
         </div>
     </div>
 </template>
@@ -78,24 +75,24 @@ export default {
 
 .wave {
     background-image: url('@/assets/Waves/Wave-1.png');
-    height: 200px;
-    // background-color: red;
+    height: 150px;
     background-repeat: no-repeat;
-    background-color: pink;
     background-position: left 0 right 0;
     background-size: cover;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .header {
-    // background-color: $bgJumboColor;
-    background-image: url('@/assets/img/theme_slider2_bg-1.jpg');
+    background-image: url('@/assets/img/theme_slider2_bg-1.jpg'), url('@/assets/Waves/Wave-1.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
 
     .layer {
         background-color: #e95e5ee1;
-        height: 500px;
+        height: 550px;
         position: relative;
         
     }
