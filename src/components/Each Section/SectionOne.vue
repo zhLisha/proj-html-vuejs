@@ -116,6 +116,11 @@ section {
         
         .btn {
             padding: 23px 40px;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: #d33;
+            }
         }
     } 
 
