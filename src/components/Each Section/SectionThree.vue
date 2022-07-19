@@ -210,6 +210,10 @@ export default {
 }
 
 .upcoming-events {
+
+    ul.flex{
+        justify-content: center;
+    }
     .title {
 
         h2 {
