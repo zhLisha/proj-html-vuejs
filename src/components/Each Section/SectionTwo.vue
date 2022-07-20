@@ -5,7 +5,7 @@
         <!-- Text Area -->
         <div class="text-area">
             <div class="title">
-                <h2>Faculties available at EdiPrime</h2>
+                <h2>Faculties available at EduPrime</h2>
             </div>
             <div class="text">
                 <p>
